@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Chivo', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/*------------------------------------------------------------*/
+/*COLOURS-----------------------------------------------------*/
+/*------------------------------------------------------------*/
+
+:root {
+    --main-bg-color: #171725;
+    --bright-green: #54E6AF;
+    --dark-grey: #2C433B;
+    --medium-grey: #5A668A;
+    --light-grey: #C2CBE5;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/*------------------------------------------------------------*/
+/*MAIN CONTAINER----------------------------------------------*/
+/*------------------------------------------------------------*/
+
+.main-container {
+    width: 1275px;
+    height: 640px;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    grid-row: 3;
+}
+
+/*--------------------*/
+/*POD LOGO------------*/
+/*--------------------*/
+
+.pod-logo {
+    width: 134.85px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: -28px;
+    z-index: 100;
+}
+
+.pod-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------*/
+/*DOT PATTERN---------*/
+/*--------------------*/
+
+.dot-pattern {
+    width: 232px;
+    height: 104px;
+    position: absolute;
+    right: 0;
+    bottom: -52px;
+    z-index: 100;
+}
+
+.dot-pattern img {
+    width: 100%;
+    height: auto;
+}
+
+.main-img {
+    width: 888px;
+    height: 640px;
+    background-image: url('/resources/images/image-host-desktop.jpg');
+    position: absolute;
+    right: 0;
+}
+
+/*------------------------------------------------------------*/
+/*CONTENT CONTAINER-------------------------------------------*/
+/*------------------------------------------------------------*/
+
+.request-access{
+    width: 723px;
+    height: 509px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    z-index: 100;
+}
+
+/*--------------------*/
+/*TITLE---------------*/
+/*--------------------*/
+
+.title {
+    grid-row: 6;
+}
+
+#title1, #title2 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 62px;;
+    color: var(--bright-green);
+    margin: 0;
+}
+
+#title2 {
+    color: #fff !important;
+}
+
+/*--------------------*/
+/*INSTRUCTIONS--------*/
+/*--------------------*/
+
+.instructions {
+    width: 445px;
+    height: 84px;
+    line-height: 28px;
+    grid-row: 8;
+    opacity: 0.8;
+}
+
+/*--------------------*/
+/*EMAIL FIELD---------*/
+/*--------------------*/
+
+.button {
+    width: 427px;
+    height: 56px;
+    grid-row: 12;
+    border-radius: 28px;
+    background-color: var(--medium-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-field {
+    height: 100%;
+    width: 62%;
+    background-color: transparent;
+    border: none;
+
+}
+
+.access-button {
+    width: 38%;
+    height: 50px;
+    border-radius: 28px;
+    background-color: var(--bright-green);
+    font-family: 'Chivo';
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-right: 3px;
+    border: none;
+    transition: 0.2s;
+}
+
+.access-button:hover {
+    background-color: #68ffc5;
+    transition: 0.2s;
+}
+
+/*--------------------*/
+/*SOCIAL--------------*/
+/*--------------------*/
+
+.social {
+    width: 536px;
+    grid-row: 16;
+    display: flex;
+    justify-content: space-between;
+}
