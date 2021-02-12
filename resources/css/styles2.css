@@ -8,6 +8,7 @@ html {
 
 * {
     box-sizing: inherit;
+    margin: 0;
 }
 
 /*------------------------------------------------------------*/
@@ -48,6 +49,124 @@ body {
     border: 1px solid;
 }
 
+.main-img {
+    width: 888px;
+    height: 640px;
+    background-image: url('/resources/images/image-host-desktop.jpg');
+    position: absolute;
+    top: 0; right: 0;
+}
+
+/*------------------------------------------------------------*/
+/*CONTENT CONTAINER-------------------------------------------*/
+/*------------------------------------------------------------*/
+
+.request-access{
+    width: 723px;
+    height: 509px;
+    position: absolute;
+    left: 0; bottom: 0;
+    z-index: 100;
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    border: 1px solid;
+}
+
+/*--------------------*/
+/*TITLE---------------*/
+/*--------------------*/
+
+.title {
+    grid-row: 5;
+}
+
+#title1, #title2 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 62px;
+    color: var(--bright-green);
+    margin: 0;
+}
+
+#title2 {
+    color: #fff !important;
+}
+
+/*--------------------*/
+/*INSTRUCTIONS--------*/
+/*--------------------*/
+
+.instructions {
+    width: 445px;
+    height: 84px;
+    line-height: 28px;
+    color: #C2CBE5;
+    grid-row: 7;
+}
+
+/*--------------------*/
+/*EMAIL FIELD---------*/
+/*--------------------*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    grid-row: 11;
+}
+
+.button {
+    width: 427px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: var(--medium-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-field {
+    height: 100%;
+    width: 62%;
+    background-color: transparent;
+    border: none;
+
+}
+
+.access-button {
+    width: 38%;
+    height: 50px;
+    border-radius: 28px;
+    background-color: var(--bright-green);
+    font-family: 'Chivo';
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-right: 3px;
+    border: none;
+    transition: 0.2s;
+}
+
+.access-button:hover {
+    background-color: #68ffc5;
+    transition: 0.2s;
+}
+
+.access-button-mobile {
+    display: none;
+}
+
+/*--------------------*/
+/*SOCIAL--------------*/
+/*--------------------*/
+
+.social {
+    width: 536px;
+    grid-row: 16;
+    display: flex;
+    justify-content: space-between;
+}
+
 /*--------------------*/
 /*POD LOGO------------*/
 /*--------------------*/
@@ -84,123 +203,16 @@ body {
     height: auto;
 }
 
-.main-img {
-    width: 888px;
-    height: 640px;
-    background-image: url('/resources/images/image-host-desktop.jpg');
-    position: absolute;
-    top: 0; right: 0;
-}
-
-/*------------------------------------------------------------*/
-/*CONTENT CONTAINER-------------------------------------------*/
-/*------------------------------------------------------------*/
-
-.request-access{
-    width: 723px;
-    height: 509px;
-    position: absolute;
-    left: 0; bottom: 0;
-    background-color: var(--main-bg-color);
-    display: grid;
-    grid-template-rows: repeat(16, 1fr);
-    z-index: 100;
-    border: 1px solid;
-}
-
-/*--------------------*/
-/*TITLE---------------*/
-/*--------------------*/
-
-.title {
-    grid-row: 6;
-}
-
-#title1, #title2 {
-    font-weight: 300;
-    font-size: 52px;
-    line-height: 62px;;
-    color: var(--bright-green);
-    margin: 0;
-}
-
-#title2 {
-    color: #fff !important;
-}
-
-/*--------------------*/
-/*INSTRUCTIONS--------*/
-/*--------------------*/
-
-.instructions {
-    width: 445px;
-    height: 84px;
-    line-height: 28px;
-    color: #C2CBE5;
-    grid-row: 8;
-}
-
-/*--------------------*/
-/*EMAIL FIELD---------*/
-/*--------------------*/
-
-.button {
-    width: 427px;
-    height: 56px;
-    grid-row: 12;
-    border-radius: 28px;
-    background-color: var(--medium-grey);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.email-field {
-    height: 100%;
-    width: 62%;
-    background-color: transparent;
-    border: none;
-
-}
-
-.access-button {
-    width: 38%;
-    height: 50px;
-    border-radius: 28px;
-    background-color: var(--bright-green);
-    font-family: 'Chivo';
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--dark-grey);
-    margin-right: 3px;
-    border: none;
-    transition: 0.2s;
-}
-
-.access-button:hover {
-    background-color: #68ffc5;
-    transition: 0.2s;
-}
-
-/*--------------------*/
-/*SOCIAL--------------*/
-/*--------------------*/
-
-.social {
-    width: 536px;
-    grid-row: 16;
-    display: flex;
-    justify-content: space-between;
-}
-
 @media only screen and (max-width: 768px) {
     .outer-container {
         width: 768px;
         height: 1024px;
+        margin: 0;
     }
 
     .main-container {
         top: 0; right: 0;
+        margin: 0;
         width: 729px;
         height: 767px;
     }
@@ -229,7 +241,7 @@ body {
     .pod-logo {
         left: 39px; top: 50px;
     }
-    
+
     .pod-logo img {
         width: 100%;
         height: auto;
@@ -249,11 +261,15 @@ body {
     .outer-container {
         width: 375px;
         height: 667px;
+        margin: auto;
     }
 
     .main-container {
-        width: 100%;
-        height: 100%;
+        top: 0; left: 0;
+        width: 375px;
+        height: 667px;
+        background-color: rgba(18, 23, 37, 1);
+
     }
 
     .main-img {
@@ -264,6 +280,7 @@ body {
         background-size: cover;
         top: 0;
         right: 0;
+        opacity: 0.1;
     }
 
     .request-access {
@@ -271,6 +288,8 @@ body {
         height: 398px;
         top: 165px; left: 0; right: 0;
         margin: auto;
+        background-color: transparent;
+        justify-items: center;
         text-align: center;
     }
 
@@ -291,17 +310,96 @@ body {
         font-size: 15px;
         line-height: 25px;
         color: #C2CBE5;
-        grid-row: 5;
+        grid-row: 3;
+    }
+
+    /*--------------------*/
+/*EMAIL FIELD---------*/
+/*--------------------*/
+    .form {
+        width: 327px;
+        height: 108px;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+    }
+    .button {
+        width: 100%;
+        height: 46px;
+        border-radius: 28px;
+        background-color: var(--medium-grey);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .email-field {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+    }
+
+    .access-button {
+        display: none;}
+        /*margin: auto;
+        width: 38%;
+        height: 50px;
+        border-radius: 28px;
+        background-color: var(--bright-green);
+        font-family: 'Chivo';
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--dark-grey);
+        margin-right: 3px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    .access-button:hover {
+        background-color: #68ffc5;
+        transition: 0.2s;
+    }*/
+
+    .access-button-mobile {
+        display: block;
+        width: 327px;
+        height: 46px;
+        grid-row: 16;
+        border-radius: 28px;
+        background-color: var(--bright-green);
+        font-family: 'Chivo';
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--dark-grey);
+        margin-right: 3px;
+        border: none;
+        transition: 0.2s;
+    }
+
+    .access-button-mobile:hover {
+        background-color: #68ffc5;
+        transition: 0.2s;
     }
 
     .social {
-        width: 315px;
+        max-width: 315px;
         height: 17px;
-        grid-row: 8;
+        overflow: hidden;
+        grid-row: 6;
     }
 
-    .spotify {
-        width: 56px;
-        height: 17px;
+    .social img {
+        width: 82%;
+        height: auto;
+    }
+
+    .pod-logo {
+        left: 0; right: 0; top: 62px;
+        margin: auto;
+    }
+
+    .dot-pattern {
+        display: none;
     }
 }

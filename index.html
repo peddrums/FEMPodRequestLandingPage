@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/resources/css/styles.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/styles2.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/favicon-32x32.png">
   
@@ -16,51 +16,57 @@
 <!--/*------------------------------------------------------------*/
   /*MAIN CONTAINER----------------------------------------------*/
   /*------------------------------------------------------------*/-->
-
-  <div class="main-container">
+  <div class="outer-container">
     <div class="pod-logo"><img src="/resources/images/logo.svg"></div>
     <div class="dot-pattern"><img src="/resources/images/bg-pattern-dots.svg"></div>
-    <div class="main-img"></div>
+    <div class="main-container">
+      <div class="main-img"></div>
 
-<!--/*------------------------------------------------------------*/
-  /*CONTENT CONTAINER-------------------------------------------*/
-  /*------------------------------------------------------------*/-->
+  <!--/*------------------------------------------------------------*/
+    /*CONTENT CONTAINER-------------------------------------------*/
+    /*------------------------------------------------------------*/-->
 
 
-    <div class="request-access">
-  <!--/*--------------------*/
-      /*TITLE---------------*/
-      /*--------------------*/-->
-      <div class="title">
-        <p id="title1">PUBLISH YOUR PODCASTS</p>
-        <p id="title2">EVERYWHERE.</p>
+      <div class="request-access">
+    <!--/*--------------------*/
+        /*TITLE---------------*/
+        /*--------------------*/-->
+        <div class="title">
+          <p id="title1">PUBLISH YOUR PODCASTS</p>
+          <p id="title2">EVERYWHERE.</p>
+        </div>
+    <!--/*--------------------*/
+        /*INSTRUCTIONS--------*/
+        /*--------------------*/-->
+        <div class="instructions">
+          <p>Upload your audio to Pod with a single click. We'll
+            then distribute your podcast to Spotify. Apple
+            Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        </div>
+    <!--/*--------------------*/
+        /*EMAIL FIELD---------*/
+        /*--------------------*/-->
+        <form action="" method="GET" class="form">
+          <div class="button">
+            <input type="text" required placeholder="Email address" class="email-field">
+            <button type="submit" class="access-button">Request Access</button>
+          </div>
+          <div class="mobile">
+            <button type="submit" class="access-button-mobile">Request Access</button>
+          </div>
+        </form>
+    <!--/*--------------------*/
+        /*SOCIAL--------------*/
+        /*--------------------*/-->
+        <div class="social">
+          <div class="icon spotify"><img src="/resources/images/spotify.svg"/></div>
+          <div class="icon apple"><img src="/resources/images/apple-podcast.svg"/></div>
+          <div class="icon google"><img src="/resources/images/google-podcasts.svg"/></div>
+          <div class="icon pocket"><img src="/resources/images/pocket-casts.svg"/></div>
+        </div>
       </div>
-  <!--/*--------------------*/
-      /*INSTRUCTIONS--------*/
-      /*--------------------*/-->
-      <div class="instructions">
-        <p>Upload your audio to Pod with a single click. We'll
-          then distribute your podcast to Spotify. Apple
-          Podcasts, Google Podcasts, Pocket Casts and more!</p>
-      </div>
-  <!--/*--------------------*/
-      /*EMAIL FIELD---------*/
-      /*--------------------*/-->
-      <div class="button">
-        <input type="text" required placeholder="Email address" class="email-field">
-        <button type="submit" class="access-button">Request Access</button>
-      </div>
-  <!--/*--------------------*/
-      /*SOCIAL--------------*/
-      /*--------------------*/-->
-      <div class="social">
-        <div class="icon spotify"><img src="/resources/images/spotify.svg"/></div>
-        <div class="icon apple"><img src="/resources/images/apple-podcast.svg"/></div>
-        <div class="icon google"><img src="/resources/images/google-podcasts.svg"/></div>
-        <div class="icon pocket"><img src="/resources/images/pocket-casts.svg"/></div>
-      </div>
+      
     </div>
-    
   </div>
   
 </body>
