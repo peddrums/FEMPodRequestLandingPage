@@ -268,7 +268,7 @@ body {
         top: 0; left: 0;
         width: 375px;
         height: 667px;
-        background-color: rgba(18, 23, 37, 1);
+        background-color: #121725;
 
     }
 
@@ -280,7 +280,7 @@ body {
         background-size: cover;
         top: 0;
         right: 0;
-        opacity: 0.1;
+        opacity: 0.15;
     }
 
     .request-access {
